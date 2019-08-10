@@ -1,0 +1,24 @@
+to="E:\TOFILE\stoage.txt"
+
+def filewrite(lst):
+    f=open(to,"w+")
+    for i in range (len(lst)):
+        f.write(lst[i])
+        f.write("\n")
+
+def fileclear():
+    f=open(to,"w")
+    f.write("")
+
+def fileread():
+    f=open(to,"r")
+    x=f.read().splitlines()
+    return x
+
+
+def filedelete(lst,x):
+    f=open(to,"w+")
+    for i in range(len(lst)):
+        a=f.read()
+        if a==x:
+            f.write("")
