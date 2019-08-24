@@ -17,7 +17,6 @@ w=s.Window("My",layout)
 while True:
     button,values=w.Read()
     w.FindElement('box').Update(lst)
-    flag=0
     if button=="ADD":
         lst.sort()
         l=values['data']+" | Priority:"+str(int(values['priority']))
